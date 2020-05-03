@@ -16,6 +16,7 @@ app = Flask(__name__)
 def home_page():
     return render_template("home.html")
 
+
 #start the server
 if __name__ == "__main__":
     app.run()
