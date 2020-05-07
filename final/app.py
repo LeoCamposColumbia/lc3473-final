@@ -29,6 +29,10 @@ def classes():
 # EVERYTHING THAT FOLLOWS IS TO RUN THE OPTIONAL/2nd HALF OF FINAL WHICH I DECIDED
 # WOULD BE AN INTERACTIVE CHOOSE YOUR OWN ADVENTURE GAME
 
+@app.route("/gamemenu")
+def gamemenu():
+    return render_template("gamemenu.html")
+
 @app.route("/gamepage")
 def game():
     return render_template("game.html")
