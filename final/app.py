@@ -14,6 +14,7 @@ app = Flask(__name__)
 #static route
 # THE THREE FOLLOWING ROUTES ARE FOR THE MAIN ASSIGNMENT (MAIN PAGE, ASSIGNMENT 
 # PAGE, CLASSES PAGE)
+
 @app.route("/")
 def home_page():
     return render_template("home.html")
@@ -116,6 +117,94 @@ def earlydeparture():
 @app.route("/gamepage/runenddeath")
 def runenddeath():
     return render_template("runenddeath.html")
+
+@app.route("/part2")
+def second():
+    return render_template("part2.html")
+
+@app.route("/part2/kid")
+def kid():
+    return render_template("kid.html")
+
+@app.route("/part2/kid/you")
+def you():
+    return render_template("you.html")
+
+@app.route("/part2/kid/both")
+def both():
+    return render_template("both.html")
+
+@app.route("/part2/drive")
+def drive():
+    return render_template("drive.html")
+
+@app.route("/part2/drive/embrace")
+def embrace():
+    return render_template("embrace.html")
+
+@app.route("/part2/drive/nocando")
+def nope():
+    return render_template("nocando.html")
+
+@app.route("/part2b")
+def bad():
+    return render_template("part2b.html")
+
+@app.route("/part2b/pickup")
+def pickup():
+    return render_template("pickup.html")
+
+@app.route("/part2b/pickup/me")
+def me():
+    return render_template("me.html")
+
+@app.route("/part2b/pickup/me/towards")
+def towards():
+    return render_template("towards.html")
+
+@app.route("/part2b/pickup/me/away")
+def away():
+    return render_template("away.html")
+
+@app.route("/part2b/pickup/us")
+def us():
+    return render_template("us.html")
+
+@app.route("/part2b/pickup/us/frontdoor")
+def frontdoor():
+    return render_template("frontdoor.html")
+
+@app.route("/part2b/pickup/us/backdoor")
+def backdoor():
+    return render_template("backdoor.html")
+
+@app.route("/part2b/go")
+def go():
+    return render_template("go.html")
+
+@app.route("/part2b/go/together")
+def together():
+    return render_template("together.html")
+
+@app.route("/part2b/go/noway")
+def noway():
+    return render_template("noway.html")
+
+@app.route("/news1")
+def news1():
+    return render_template("news1.html")
+
+@app.route("/news2")
+def news2():
+    return render_template("news2.html")
+
+@app.route("/news3")
+def news3():
+    return render_template("news3.html")
+
+@app.route("/news4")
+def news4():
+    return render_template("news4.html")
 
 #start the server
 if __name__ == "__main__":
